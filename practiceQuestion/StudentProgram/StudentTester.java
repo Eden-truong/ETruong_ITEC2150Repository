@@ -1,5 +1,14 @@
 package ITEC2150.practiceQuestion.StudentProgram;
 
+/**
+ * class: StudentTester
+ * author: Eden Truong
+ * date: 08/19/2023
+ * version: 1.0
+ * description: ITEC 2150 Practice Student Tester Class
+ *
+ */
+
 public class StudentTester {
     public static void main(String[] args) {
         StudentList list = new StudentList();
