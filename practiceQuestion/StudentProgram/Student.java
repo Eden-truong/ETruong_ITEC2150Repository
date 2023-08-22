@@ -1,5 +1,14 @@
 package ITEC2150.practiceQuestion.StudentProgram;
 
+/**
+ * class: Student
+ * author: Eden Truong
+ * date: 08/19/2023
+ * version: 1.0
+ * description: ITEC 2150 Practice Student Class
+ *
+ */
+
 public class Student {
     //data
     private String name;
