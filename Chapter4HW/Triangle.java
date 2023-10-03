@@ -1,4 +1,4 @@
-package ITEC2150.Chapter4HW;
+package Chapter4HW;
 
 /**
  * class: Triangle
@@ -24,11 +24,19 @@ public class Triangle {
             return true;
         }
         else {
-            throw new IllegalTriangleSideException("each two sides adding together must be higher than the third side"); //this will print
+            throw new IllegalTriangleSideException(); //this will print
         }
     }
     public static void main(String[] args) throws IllegalTriangleSideException {
-        Triangle triangle1 = new Triangle(1,2,3);
-        System.out.println(triangle1.checkSides()); //test
+//        Triangle triangle1 = new Triangle(1,2,3);
+//        System.out.println(triangle1.checkSides()); //test (this or the bottom both works)
+
+        try {
+           Triangle triangle2 = new Triangle(3,2,1);
+           triangle2.checkSides();
+        }
+        catch(IllegalTriangleSideException e) {
+            System.out.println("invalid");
+        }
     }
 }

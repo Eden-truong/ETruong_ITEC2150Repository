@@ -1,4 +1,4 @@
-package ITEC2150.Chapter4HW;
+package Chapter4HW;
 
 /**
  * class: IllegalTriangleSideException
@@ -7,9 +7,6 @@ package ITEC2150.Chapter4HW;
  * description: custom error handling for triangle sides
  */
 public class IllegalTriangleSideException extends Exception{
-    private int sideOne;
-    private int sideTwo;
-    private int sideThree;
 
     public IllegalTriangleSideException() {
         super("an Invalid side measurement have been provided");
@@ -19,24 +16,4 @@ public class IllegalTriangleSideException extends Exception{
         super(message);
     }
 
-    //constructors
-    public IllegalTriangleSideException(String message, int sideOne, int sideTwo, int sideThree) {
-        super(message);
-        this.sideOne = sideOne;
-        this.sideTwo = sideTwo;
-        this.sideThree = sideThree;
-    }
-
-    //getters
-    public int getSideOne() {
-        return sideOne;
-    }
-
-    public int getSideTwo() {
-        return sideTwo;
-    }
-
-    public int getSideThree() {
-        return sideThree;
-    }
 }
