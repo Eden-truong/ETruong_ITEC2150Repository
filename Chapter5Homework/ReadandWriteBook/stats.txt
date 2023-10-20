@@ -1,0 +1,4 @@
+The Sum of the numbers are: 55
+The Smallest number is: 1
+The Largest number is: 10
+The Average of all numbers are: 5
